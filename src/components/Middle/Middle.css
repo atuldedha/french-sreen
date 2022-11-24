@@ -1,0 +1,127 @@
+.middleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 50px 100px;
+}
+
+.middleLeftContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.middleLinks {
+    padding: 20px 50px;
+    border-radius: 24px;
+    background-color: #DEF5E5;
+    color: black;
+    border: 1px solid #BCEAD5;
+    margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: sans-serif;
+}
+
+.middleLinks:hover {
+    cursor: pointer;
+    transform: scale(1.05);
+    transition: all ease-in-out;
+    background-color: #BCEAD5;
+}
+
+.middleRightContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    height: 100%;
+    border-radius: 30px;
+    padding: 40px 100px;
+    border: 1px solid #BCEAD5;
+}
+
+.profileImageContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.profileImage {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+}
+
+.profileNameWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.firstNameText {
+    font-size: 15px;
+    font-weight: 500;
+    color: black;
+    font-family: sans-serif;
+}
+
+.firstNameValue {
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.editInfoTextContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.editButton {
+    padding: 8px 20px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 100px;
+    background-color: #DEF5E5;
+    color: black;
+    border: none;
+
+}
+
+.editButton:hover{
+    cursor: pointer;
+    background-color: #8EC3B0;
+    color: white;
+    transition: all ease-in-out;
+}
+
+.editInfoContainer {
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px;
+
+}
+
+.flexRowContainer {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.editOption {
+    font-size: 16px;
+    font-weight: 500;
+    color: black;
+    font-family: sans-serif;
+}
+
+.editValue {
+    font-size: 16px;
+    font-weight: 600;
+    color: black;
+    font-family: sans-serif;
+    margin-left: 10px;
+}
