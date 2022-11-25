@@ -13,9 +13,9 @@
 .middleLinks {
     padding: 20px 50px;
     border-radius: 24px;
-    background-color: #DEF5E5;
-    color: black;
-    border: 1px solid #BCEAD5;
+    background-color: #2154a2;
+    color: white;
+    border: 1px solid #2c5faa;
     margin-bottom: 30px;
     font-size: 18px;
     font-weight: 500;
@@ -26,7 +26,7 @@
     cursor: pointer;
     transform: scale(1.05);
     transition: all ease-in-out;
-    background-color: #BCEAD5;
+    background-color: #3a73c9;
 }
 
 .middleRightContainer {
@@ -48,9 +48,10 @@
 }
 
 .profileImage {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
+    border: 1px solid #0e264a;
 }
 
 .profileNameWrapper {
@@ -61,10 +62,16 @@
 }
 
 .firstNameText {
-    font-size: 15px;
-    font-weight: 500;
+    font-size: 18px;
+    font-weight: 600;
     color: black;
     font-family: sans-serif;
+}
+
+.firstNameText2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 10px;
 }
 
 .firstNameValue {
@@ -80,20 +87,20 @@
 }
 
 .editButton {
-    padding: 8px 20px;
+    padding: 8px 30px;
     border-radius: 8px;
     font-size: 16px;
     font-weight: 500;
     margin-left: 100px;
-    background-color: #DEF5E5;
-    color: black;
+    background-color: #2154a2;
+    color: white;
     border: none;
 
 }
 
 .editButton:hover{
     cursor: pointer;
-    background-color: #8EC3B0;
+    background-color: #1c63cd;
     color: white;
     transition: all ease-in-out;
 }

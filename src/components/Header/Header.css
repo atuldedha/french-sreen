@@ -4,7 +4,7 @@
     justify-content: space-between;
     height: max-content;
     padding: 10px 20px;
-    background: #8EC3B0;
+    background: #2154a2;
     border-radius: 0 0 10px;
     box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
 }
@@ -46,15 +46,16 @@
 }
 
 .logoutButton {
-    padding: 10px 20px;
+    padding: 18px 20px;
     border-radius: 8px;
     border: none;
-    background: #BCEAD5;
-    color: black;
+    background: #2c5faa;
+    color: white;
+    border-radius: 50%;
 }
 
 .logoutButton:hover{
     cursor: pointer;
-    background-color: #5d9e86;
+    background-color: #226fe4;
     color: white;
 }

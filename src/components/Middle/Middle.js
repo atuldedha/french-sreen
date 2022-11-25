@@ -13,16 +13,26 @@ const Middle = () => {
       </div>
       <div className="middleRightContainer">
         <div className="profileImageContainer">
-          <img src={info.image} alt="icon" className="profileImage" />
+          <input
+            type="file"
+            id="input-file-upload"
+            hidden
+            // multiple={true}
+            // onChange={handleChange}
+          />
+          <label id="label-file-upload" htmlFor="input-file-upload">
+            <img src={info.image} alt="icon" className="profileImage" />
+          </label>
         </div>
 
         <div className="profileNameWrapper">
-          <span className="firstNameText">First Name: &nbsp;</span>
+          <span className="firstNameText">Name: &nbsp;</span>
           <span className="firstNameValue">{info.firstName}</span>
         </div>
 
         <div className="editInfoTextContainer">
-          <span className="firstNameText">Données Personnelles</span>
+          <span className="firstNameText">Données</span>
+          <span className="firstNameText2">Personnelles</span>
           <button className="editButton">Edit</button>
         </div>
 
@@ -47,7 +57,10 @@ const Middle = () => {
         </div>
 
         <div className="editInfoTextContainer">
-          <span className="firstNameText">Données de la Rèunion:</span>
+          <span className="firstNameText">
+            Données <span>&nbsp;</span> de <span>&nbsp;</span> la{" "}
+            <span>&nbsp;</span>Rèunion:
+          </span>
           <button className="editButton">Edit</button>
         </div>
 

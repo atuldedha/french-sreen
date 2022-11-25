@@ -1,5 +1,6 @@
 import React from "react";
 import "./Header.css";
+import LogoutIcon from "../../icons/logout.png";
 
 const Header = () => {
   return (
@@ -18,7 +19,9 @@ const Header = () => {
           <span className="headerText">Rejoindre</span>
         </div>
 
-        <button className="logoutButton">Logout</button>
+        <button className="logoutButton">
+          <img src={LogoutIcon} alt="logout" />
+        </button>
       </div>
     </div>
   );
