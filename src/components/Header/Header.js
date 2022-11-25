@@ -1,8 +1,22 @@
 import React from "react";
 import "./Header.css";
 import LogoutIcon from "../../icons/logout.png";
+import { useNavigate } from "react-router-dom";
+// import {signOut} from "firebase/auth";
+// import { auth } from "../firebase";
 
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleRoute = (value) => {
+    navigate(value);
+  };
+
+  const logout = async () => {
+    //uncomment when firbase is implemented
+    // await signOut(auth);
+    console.log("logout called");
+  };
   return (
     <div className="headerContainer">
       <div className="leftContent">
@@ -15,12 +29,16 @@ const Header = () => {
 
       <div className="rightContent">
         <div className="headerLinks">
-          <span className="headerText">Planifier</span>
-          <span className="headerText">Rejoindre</span>
+          <span className="headerText" onClick={() => handleRoute("/plan")}>
+            Planifier
+          </span>
+          <span className="headerText" onClick={() => handleRoute("/rejoin")}>
+            Rejoindre
+          </span>
         </div>
 
         <button className="logoutButton">
-          <img src={LogoutIcon} alt="logout" />
+          <img src={LogoutIcon} alt="logout" onClick={logout} />
         </button>
       </div>
     </div>

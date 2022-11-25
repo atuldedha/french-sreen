@@ -48,10 +48,13 @@
 }
 
 .profileImage {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: 50px;
     border-radius: 50%;
     border: 1px solid #0e264a;
+}
+.profileImage:hover{
+    cursor: pointer;
 }
 
 .profileNameWrapper {
@@ -71,6 +74,8 @@
 .firstNameText2 {
     font-size: 18px;
     font-weight: 600;
+    color: black;
+    font-family: sans-serif;
     margin-left: 10px;
 }
 
@@ -95,10 +100,31 @@
     background-color: #2154a2;
     color: white;
     border: none;
-
 }
 
-.editButton:hover{
+.saveButton {
+    padding: 8px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 60px;
+    background-color: #2154a2;
+    color: white;
+    border: none;
+}
+
+.closeButton {
+    padding: 8px 30px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    background-color: #2154a2;
+    color: white;
+    border: none;
+}
+
+.saveButton:hover,.closeButton:hover,.editButton:hover{
     cursor: pointer;
     background-color: #1c63cd;
     color: white;
@@ -109,6 +135,8 @@
     display: flex;
     flex-direction: column;
     margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 40px;
 
 }
 
@@ -131,4 +159,14 @@
     color: black;
     font-family: sans-serif;
     margin-left: 10px;
+}
+
+.editInput {
+    padding: 5px 10px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    font-weight: 500;
+    margin-left: 10px;
+    font-family: sans-serif;
 }
